@@ -30,7 +30,7 @@ public class MockingSpongeBob {
             String sentence= sc.nextLine();
             for (int j=0;j<sentence.length();j++) {
                 char c=sentence.charAt(j);
-                if (c!=' ')
+                if (c>='a' && c<='z' || c>='A' && c<='Z')
                 {
                     if (upCase) returnText+=Character.toUpperCase(c);
                     else returnText+=Character.toLowerCase(c);
